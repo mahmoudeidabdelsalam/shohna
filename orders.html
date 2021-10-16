@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="ar" dir="rtl"> 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>شحنة</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white custom-header">
+      <div class="container">
+        <div class="col-md-2 col-12">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="logo shohna">
+          </a>
+          <div class="links-mobile">
+            <a href="orders.html" class="notification">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19.734" height="22.064" viewBox="0 0 19.734 22.064">
+                <g id="noun_notification_2139031" transform="translate(-13 -10)">
+                  <path id="Path_6140" data-name="Path 6140" d="M30.267,29.46a2.463,2.463,0,0,0,.6-4.851,12.889,12.889,0,0,1-1.316-4.742l-.11-1.4a6.6,6.6,0,0,0-4.111-6.057,2.467,2.467,0,0,0-4.934,0,6.6,6.6,0,0,0-4.111,6.057l-.11,1.4a12.889,12.889,0,0,1-1.316,4.742,2.463,2.463,0,0,0,.6,4.851h4.3a3.144,3.144,0,0,0,6.194,0Zm-7.4-17.816a.8.8,0,0,1,.767.548H22.1A.8.8,0,0,1,22.867,11.645Zm-4.934,6.907V18.5a4.96,4.96,0,0,1,3.344-4.659h3.207A4.973,4.973,0,0,1,27.8,18.5l.11,1.48V20a15.233,15.233,0,0,0,1.1,4.5H16.728a16.419,16.419,0,0,0,1.1-4.5Zm-3.289,8.442a.814.814,0,0,1,.767-.822H30.295a.823.823,0,0,1-.055,1.645H15.467A.808.808,0,0,1,14.645,26.993Zm8.223,3.426a1.519,1.519,0,0,1-1.37-.959h2.741A1.478,1.478,0,0,1,22.867,30.419Z" fill="#0097a7"/>
+                </g>
+              </svg>
+              <span class="update"></span>              
+            </a>
+            <a href="profile.html">
+              <svg id="noun_account_3451332" xmlns="http://www.w3.org/2000/svg" width="19.137" height="18.933" viewBox="0 0 19.137 18.933">
+                <path id="Path_5600" data-name="Path 5600" d="M14.587,13.964A4.8,4.8,0,0,1,10,8.982,4.8,4.8,0,0,1,14.587,4a4.8,4.8,0,0,1,4.587,4.982A4.8,4.8,0,0,1,14.587,13.964Zm0-7.971a2.878,2.878,0,0,0-2.752,2.989,2.878,2.878,0,0,0,2.752,2.989,2.878,2.878,0,0,0,2.752-2.989A2.878,2.878,0,0,0,14.587,5.993Z" transform="translate(-5.018 -4)" fill="#0097a7"/>
+                <path id="Path_5601" data-name="Path 5601" d="M23.18,24.967H5.957a.977.977,0,0,1-.957-1V21.978A5.863,5.863,0,0,1,10.741,16H18.4a5.863,5.863,0,0,1,5.741,5.978v1.993A.977.977,0,0,1,23.18,24.967ZM6.914,22.975h15.31v-1A3.909,3.909,0,0,0,18.4,17.993H10.741a3.909,3.909,0,0,0-3.827,3.985Z" transform="translate(-5 -6.034)" fill="#0097a7"/>
+              </svg>
+            </a>
+          </div>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-md-10 col-12">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+              </li>
+            </ul>
+            <!-- Example single danger button -->
+            <div class="btn-group">
+
+              <a href="#" class="notification">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.734" height="22.064" viewBox="0 0 19.734 22.064">
+                  <g id="noun_notification_2139031" transform="translate(-13 -10)">
+                    <path id="Path_6140" data-name="Path 6140" d="M30.267,29.46a2.463,2.463,0,0,0,.6-4.851,12.889,12.889,0,0,1-1.316-4.742l-.11-1.4a6.6,6.6,0,0,0-4.111-6.057,2.467,2.467,0,0,0-4.934,0,6.6,6.6,0,0,0-4.111,6.057l-.11,1.4a12.889,12.889,0,0,1-1.316,4.742,2.463,2.463,0,0,0,.6,4.851h4.3a3.144,3.144,0,0,0,6.194,0Zm-7.4-17.816a.8.8,0,0,1,.767.548H22.1A.8.8,0,0,1,22.867,11.645Zm-4.934,6.907V18.5a4.96,4.96,0,0,1,3.344-4.659h3.207A4.973,4.973,0,0,1,27.8,18.5l.11,1.48V20a15.233,15.233,0,0,0,1.1,4.5H16.728a16.419,16.419,0,0,0,1.1-4.5Zm-3.289,8.442a.814.814,0,0,1,.767-.822H30.295a.823.823,0,0,1-.055,1.645H15.467A.808.808,0,0,1,14.645,26.993Zm8.223,3.426a1.519,1.519,0,0,1-1.37-.959h2.741A1.478,1.478,0,0,1,22.867,30.419Z" fill="#0097a7"/>
+                  </g>
+                </svg>
+                <span class="update"></span>              
+              </a>
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg id="noun_account_3451332" xmlns="http://www.w3.org/2000/svg" width="19.137" height="18.933" viewBox="0 0 19.137 18.933">
+                  <path id="Path_5600" data-name="Path 5600" d="M14.587,13.964A4.8,4.8,0,0,1,10,8.982,4.8,4.8,0,0,1,14.587,4a4.8,4.8,0,0,1,4.587,4.982A4.8,4.8,0,0,1,14.587,13.964Zm0-7.971a2.878,2.878,0,0,0-2.752,2.989,2.878,2.878,0,0,0,2.752,2.989,2.878,2.878,0,0,0,2.752-2.989A2.878,2.878,0,0,0,14.587,5.993Z" transform="translate(-5.018 -4)" fill="#0097a7"/>
+                  <path id="Path_5601" data-name="Path 5601" d="M23.18,24.967H5.957a.977.977,0,0,1-.957-1V21.978A5.863,5.863,0,0,1,10.741,16H18.4a5.863,5.863,0,0,1,5.741,5.978v1.993A.977.977,0,0,1,23.18,24.967ZM6.914,22.975h15.31v-1A3.909,3.909,0,0,0,18.4,17.993H10.741a3.909,3.909,0,0,0-3.827,3.985Z" transform="translate(-5 -6.034)" fill="#0097a7"/>
+                </svg>  
+                <p class="is-login">
+                  <small>أهلاً بك</small>
+                  <span class="name">أحمد العمري</span>
+                </p>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logInModal">
+                  تسجيل دخول
+                  <svg id="noun_account_3451332" xmlns="http://www.w3.org/2000/svg" width="12.933" height="13.579" viewBox="0 0 12.933 13.579">
+                    <path id="Path_5600" data-name="Path 5600" d="M13.233,10.466a3.233,3.233,0,1,1,3.233-3.233A3.233,3.233,0,0,1,13.233,10.466Zm0-5.173a1.94,1.94,0,1,0,1.94,1.94A1.94,1.94,0,0,0,13.233,5.293Z" transform="translate(-6.767 -4)" fill="#0097a7"/>
+                    <path id="Path_5601" data-name="Path 5601" d="M17.286,21.82H5.647A.647.647,0,0,1,5,21.173V19.88A3.88,3.88,0,0,1,8.88,16h5.173a3.88,3.88,0,0,1,3.88,3.88v1.293A.647.647,0,0,1,17.286,21.82ZM6.293,20.526H16.64V19.88a2.587,2.587,0,0,0-2.587-2.587H8.88A2.587,2.587,0,0,0,6.293,19.88Z" transform="translate(-5 -8.24)" fill="#0097a7"/>
+                  </svg>
+                </a>
+                <a class="dropdown-item" href="orders.html">الشحنات 
+                  <svg id="Group_1080" data-name="Group 1080" xmlns="http://www.w3.org/2000/svg" width="13.002" height="13.909" viewBox="0 0 13.002 13.909">
+                    <path id="Path_5972" data-name="Path 5972" d="M13.487,956.362a.539.539,0,0,0-.156.028L7.283,958.81a.465.465,0,0,0-.283.425V967.4a.465.465,0,0,0,.283.421l6.047,2.419a.459.459,0,0,0,.34,0l6.047-2.419A.465.465,0,0,0,20,967.4v-8.164a.465.465,0,0,0-.283-.425l-6.047-2.419a.492.492,0,0,0-.184-.028Zm.014.94,4.819,1.928-1.8.723L11.7,958.021Zm-3.024,1.209L15.3,960.44l-1.8.723L8.682,959.23Zm-2.57,1.394,5.14,2.055v7.186l-5.14-2.06Zm11.187,0v7.181l-5.14,2.06v-7.186l2.117-.846v1.748a.454.454,0,1,0,.907,0v-2.112Z" transform="translate(-7 -956.362)" fill="#0097a7"/>
+                  </svg>                  
+                </a>
+                <a class="dropdown-item" href="wallet.html">المحفظة
+                  <svg id="noun_Wallet_1451486" xmlns="http://www.w3.org/2000/svg" width="13.945" height="12.393" viewBox="0 0 13.945 12.393">
+                    <g id="Group">
+                      <path id="Compound_Path" data-name="Compound Path" d="M19.074,16.631h-.581V15.3A1.57,1.57,0,0,0,17,13.725V12.673a1.57,1.57,0,0,0-1.57-1.57H13.044l-.314-.361a.471.471,0,0,0-.66-.047L11.6,11.1H7.375A1.775,1.775,0,0,0,5.6,12.877v.11h0v8.464a1.523,1.523,0,0,0,1.523,1.523h9.8a1.57,1.57,0,0,0,1.57-1.57V19.976h.581a.471.471,0,0,0,.471-.471V17.1A.471.471,0,0,0,19.074,16.631Zm-3.643-4.586a.628.628,0,0,1,.628.628v1.052h-.754l-1.445-1.68Zm-3.109-.33,1.727,2.01H10Zm-4.947.33H10.5l-1.947,1.68H7.375a.84.84,0,1,1,0-1.68Zm10.176,9.344a.628.628,0,0,1-.628.628h-9.8a.581.581,0,0,1-.581-.581V14.448a1.775,1.775,0,0,0,.832.2h9.548a.628.628,0,0,1,.628.628v1.351h-.6a1.665,1.665,0,0,0,0,3.329h.6ZM18.6,19.018H16.954a.722.722,0,0,1,0-1.445H18.6Z" transform="translate(-5.6 -10.582)" fill="#0097a7"/>
+                    </g>
+                  </svg>
+                </a>
+                <a class="dropdown-item" href="profile.html">الملف الشخصي
+                  <svg id="noun_account_3451332" xmlns="http://www.w3.org/2000/svg" width="12.933" height="13.579" viewBox="0 0 12.933 13.579">
+                    <path id="Path_5600" data-name="Path 5600" d="M13.233,10.466a3.233,3.233,0,1,1,3.233-3.233A3.233,3.233,0,0,1,13.233,10.466Zm0-5.173a1.94,1.94,0,1,0,1.94,1.94A1.94,1.94,0,0,0,13.233,5.293Z" transform="translate(-6.767 -4)" fill="#0097a7"/>
+                    <path id="Path_5601" data-name="Path 5601" d="M17.286,21.82H5.647A.647.647,0,0,1,5,21.173V19.88A3.88,3.88,0,0,1,8.88,16h5.173a3.88,3.88,0,0,1,3.88,3.88v1.293A.647.647,0,0,1,17.286,21.82ZM6.293,20.526H16.64V19.88a2.587,2.587,0,0,0-2.587-2.587H8.88A2.587,2.587,0,0,0,6.293,19.88Z" transform="translate(-5 -8.24)" fill="#0097a7"/>
+                  </svg>
+                </a>
+                <a class="dropdown-item" href="#">تسجيل خروج
+                  <svg id="noun_Log_Out_2028520" data-name="noun_Log Out_2028520" xmlns="http://www.w3.org/2000/svg" width="14.822" height="13.579" viewBox="0 0 14.822 13.579">
+                    <g id="Group_645" data-name="Group 645">
+                      <path id="Path_5644" data-name="Path 5644" d="M65.8,93.579h5.177a1.809,1.809,0,0,0,1.817-1.8V90.4a.656.656,0,0,0-1.312,0v1.373a.494.494,0,0,1-.505.49H65.8a.481.481,0,0,1-.49-.49V81.8a.481.481,0,0,1,.49-.49h5.177a.494.494,0,0,1,.505.49v1.346a.656.656,0,0,0,1.312,0V81.8A1.809,1.809,0,0,0,70.979,80H65.8A1.8,1.8,0,0,0,64,81.8v9.976A1.8,1.8,0,0,0,65.8,93.579Z" transform="translate(-64 -80)" fill="#0097a7"/>
+                      <path id="Path_5645" data-name="Path 5645" d="M161.054,179.953a.652.652,0,0,0,.428.162.643.643,0,0,0,.494-.228l2.484-2.862a.658.658,0,0,0,.216-.486.645.645,0,0,0-.251-.513l-2.484-2.484a.655.655,0,0,0-.926.926l1.416,1.416h-8.476a.656.656,0,1,0,0,1.312h8.622l-1.589,1.832A.655.655,0,0,0,161.054,179.953Z" transform="translate(-149.855 -169.749)" fill="#0097a7"/>
+                    </g>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 page-header mt-5 mb-5">
+          <h2 class="font-s-md text-darkin font-weight-bold"><i class="fa fa-dropbox text-secondary"></i> الشحنات</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="main" id="OrderDetails">
+      <div class="container">
+        <div class="row">
+
+            
+          <div class="col-12">
+            <div class="box-custom-primary m-t5 mb-5">
+              <img src="images/logo-3.png" alt="logo">
+              <div class="tab-info">
+                <span class="text-gary">تاريخ الطلب</span>
+                <span class="number">25/3/2021</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">رقم الطلب</span>
+                <span class="number">123456</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">تكلفة الشحن</span>
+                <span class="number">40.25 ريال</span>
+              </div>
+              <div class="tab-info">
+                <span>وزن الشحنة</span>
+                <span class="number">3 كجم</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">حالة الطلب</span>
+                <span class="number text-primary">تم اصدار بوليصة الشحن</span>
+              </div>
+              
+              <div class="tab-button">
+                <button class="btn btn-primary">تحميل بوليصة الشحن</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <div class="box-custom-primary m-t5 mb-5">
+              <img src="images/logo-3.png" alt="logo">
+              <div class="tab-info">
+                <span class="text-gary">تاريخ الطلب</span>
+                <span class="number">25/3/2021</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">رقم الطلب</span>
+                <span class="number">123456</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">تكلفة الشحن</span>
+                <span class="number">40.25 ريال</span>
+              </div>
+              <div class="tab-info">
+                <span>وزن الشحنة</span>
+                <span class="number">3 كجم</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">حالة الطلب</span>
+                <span class="number text-primary">تم اصدار بوليصة الشحن</span>
+              </div>
+              
+              <div class="tab-button">
+                <button class="btn btn-primary">تحميل بوليصة الشحن</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <div class="box-custom-primary m-t5 mb-5">
+              <img src="images/logo-3.png" alt="logo">
+              <div class="tab-info">
+                <span class="text-gary">تاريخ الطلب</span>
+                <span class="number">25/3/2021</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">رقم الطلب</span>
+                <span class="number">123456</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">تكلفة الشحن</span>
+                <span class="number">40.25 ريال</span>
+              </div>
+              <div class="tab-info">
+                <span>وزن الشحنة</span>
+                <span class="number">3 كجم</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">حالة الطلب</span>
+                <span class="number text-primary">تم اصدار بوليصة الشحن</span>
+              </div>
+              
+              <div class="tab-button">
+                <button class="btn btn-primary">تحميل بوليصة الشحن</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <div class="box-custom-primary m-t5 mb-5">
+              <img src="images/logo-3.png" alt="logo">
+              <div class="tab-info">
+                <span class="text-gary">تاريخ الطلب</span>
+                <span class="number">25/3/2021</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">رقم الطلب</span>
+                <span class="number">123456</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">تكلفة الشحن</span>
+                <span class="number">40.25 ريال</span>
+              </div>
+              <div class="tab-info">
+                <span>وزن الشحنة</span>
+                <span class="number">3 كجم</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">حالة الطلب</span>
+                <span class="number text-primary">تم اصدار بوليصة الشحن</span>
+              </div>
+              
+              <div class="tab-button">
+                <button class="btn btn-primary">تحميل بوليصة الشحن</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <div class="box-custom-primary m-t5 mb-5">
+              <img src="images/logo-3.png" alt="logo">
+              <div class="tab-info">
+                <span class="text-gary">تاريخ الطلب</span>
+                <span class="number">25/3/2021</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">رقم الطلب</span>
+                <span class="number">123456</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">تكلفة الشحن</span>
+                <span class="number">40.25 ريال</span>
+              </div>
+              <div class="tab-info">
+                <span>وزن الشحنة</span>
+                <span class="number">3 كجم</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">حالة الطلب</span>
+                <span class="number text-primary">تم اصدار بوليصة الشحن</span>
+              </div>
+              
+              <div class="tab-button">
+                <button class="btn btn-primary">تحميل بوليصة الشحن</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <div class="box-custom-primary m-t5 mb-5">
+              <img src="images/logo-3.png" alt="logo">
+              <div class="tab-info">
+                <span class="text-gary">تاريخ الطلب</span>
+                <span class="number">25/3/2021</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">رقم الطلب</span>
+                <span class="number">123456</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">تكلفة الشحن</span>
+                <span class="number">40.25 ريال</span>
+              </div>
+              <div class="tab-info">
+                <span>وزن الشحنة</span>
+                <span class="number">3 كجم</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">حالة الطلب</span>
+                <span class="number text-primary">تم اصدار بوليصة الشحن</span>
+              </div>
+              
+              <div class="tab-button">
+                <button class="btn btn-primary">تحميل بوليصة الشحن</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <div class="box-custom-primary m-t5 mb-5">
+              <img src="images/logo-3.png" alt="logo">
+              <div class="tab-info">
+                <span class="text-gary">تاريخ الطلب</span>
+                <span class="number">25/3/2021</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">رقم الطلب</span>
+                <span class="number">123456</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">تكلفة الشحن</span>
+                <span class="number">40.25 ريال</span>
+              </div>
+              <div class="tab-info">
+                <span>وزن الشحنة</span>
+                <span class="number">3 كجم</span>
+              </div>
+              <div class="tab-info">
+                <span class="text-gary">حالة الطلب</span>
+                <span class="number text-primary">تم اصدار بوليصة الشحن</span>
+              </div>
+              
+              <div class="tab-button">
+                <button class="btn btn-primary">تحميل بوليصة الشحن</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-12">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="logo shohna">
+            </a>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-title text-white form-control-sm">روابط مهمة</h3>
+            <ul class="links">
+              <li><a href="#">الرئيسية</a></li>
+              <li><a href="#">سياسة الخصوصية</a></li>
+              <li><a href="#">من نحن</a></li>
+              <li><a href="#">اتصل بنا</a></li>
+              <li><a href="#">الأسئلة الشائعة</a></li>              
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-title text-white form-control-sm">التواصل الاجتماعي</h3>
+            <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <copyright class="copyright">
+        <p>جميع الحقوق محفوظة</p>
+      </copyright>
+    </footer>
+
+    <!-- Modal login -->
+    <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.828" height="13.828" viewBox="0 0 13.828 13.828">
+                <g id="Group_1165" data-name="Group 1165" transform="translate(-834.086 -278.086)">
+                  <line id="Line_83" data-name="Line 83" x2="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                  <line id="Line_84" data-name="Line 84" x1="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                </g>
+              </svg>                           
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-12">
+                <h3 class="text-secondary font-s-lg font-weight-bold text-center">تسجيل دخول</h3>
+
+                <div class="input-group mb-3 mt-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-id"><i class="fa fa-id-card text-secondary"></i></span>
+                  </div>
+                  <input type="number" class="form-control" placeholder="رقم الهوية" aria-label="id" aria-describedby="basic-id">
+                </div>
+
+                <a href="#" class="mr-auto border-bottom text-secondary small pull-left" data-dismiss="modal" data-toggle="modal" data-target="#ForgotPassword">نسيت كلمة المرور؟</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0 pb-5">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">دخول</button>
+            <button type="button" class="btn btn-primary border-primary bg-white text-secondary pl-5 pr-5" data-dismiss="modal" data-toggle="modal" data-target="#SignUp">انشاء حساب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Forgot Password -->
+    <div class="modal fade" id="ForgotPassword" tabindex="-1" aria-labelledby="ForgotPasswordLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.828" height="13.828" viewBox="0 0 13.828 13.828">
+                <g id="Group_1165" data-name="Group 1165" transform="translate(-834.086 -278.086)">
+                  <line id="Line_83" data-name="Line 83" x2="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                  <line id="Line_84" data-name="Line 84" x1="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                </g>
+              </svg>                           
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-12">
+                <h3 class="text-secondary font-s-lg font-weight-bold text-center">هل نسيت كلمة المرور؟</h3>
+                <p class="mx-5 text-gary font-s-xs text-center">فضلاً قم بإدخال الجوال ليتم ارسال كود التحقق عليه لاستعادة كلمة السر</p>
+                <div class="input-group mb-3 mt-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="number-phone-id"><i class="fa fa-phone text-secondary"></i></span>
+                  </div>
+                  <input type="number" class="form-control" placeholder="رقم الجوال" aria-label="number-phone" aria-describedby="number-phone-id">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0 pb-5">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">ارسال</button>
+            <button type="button" class="btn btn-primary border-primary bg-white text-secondary pl-5 pr-5" data-dismiss="modal"  data-toggle="modal" data-target="#CodeVerification">تسجيل دخول</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal Verification code -->
+    <div class="modal fade" id="CodeVerification" tabindex="-1" aria-labelledby="CodeVerificationLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.828" height="13.828" viewBox="0 0 13.828 13.828">
+                <g id="Group_1165" data-name="Group 1165" transform="translate(-834.086 -278.086)">
+                  <line id="Line_83" data-name="Line 83" x2="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                  <line id="Line_84" data-name="Line 84" x1="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                </g>
+              </svg>                           
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-12">
+                <h3 class="text-secondary font-s-lg font-weight-bold text-center">كود التفعيل</h3>
+                <p class="mx-5 text-gary font-s-xs text-center">فضلاً قم بإدخال كود التحقق المرسل على رقم الجوال الخاص بك والمسجل في ابشر لاستعادة كلمة السر</p>
+                <div class="input mb-3 mt-4">
+                  <input type="number" class="form-control" placeholder="*********" aria-label="number-phone" aria-describedby="number-phone-id">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0 pb-5">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#SetPassword">ارسال</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal password code -->
+    <div class="modal fade" id="SetPassword" tabindex="-1" aria-labelledby="SetPasswordLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.828" height="13.828" viewBox="0 0 13.828 13.828">
+                <g id="Group_1165" data-name="Group 1165" transform="translate(-834.086 -278.086)">
+                  <line id="Line_83" data-name="Line 83" x2="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                  <line id="Line_84" data-name="Line 84" x1="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                </g>
+              </svg>                           
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-12">
+                <h3 class="text-secondary font-s-lg font-weight-bold text-center">إعادة تعيين كلمة السر</h3>
+                <p class="mx-5 text-gary font-s-xs text-center">فضلاً إدخال كلمة سر جديدة لدخول الى حسابك </p>
+                <div class="input-group mb-3 mt-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="password-1"><i class="fa fa-lock text-secondary"></i></span>
+                  </div>
+                  <input type="number" class="form-control" placeholder="كلمة السر" aria-label="password-1" aria-describedby="password-1">
+                </div>
+                <div class="input-group mb-3 mt-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="password-2"><i class="fa fa-lock text-secondary"></i></span>
+                  </div>
+                  <input type="number" class="form-control" placeholder="كلمة السر مجددًا " aria-label="password-2" aria-describedby="password-2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0 pb-5">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#DonePassword">ارسال</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal password done -->
+    <div class="modal fade" id="DonePassword" tabindex="-1" aria-labelledby="DonePasswordLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.828" height="13.828" viewBox="0 0 13.828 13.828">
+                <g id="Group_1165" data-name="Group 1165" transform="translate(-834.086 -278.086)">
+                  <line id="Line_83" data-name="Line 83" x2="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                  <line id="Line_84" data-name="Line 84" x1="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                </g>
+              </svg>                           
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-12">
+                <h3 class="text-secondary font-s-lg font-weight-bold text-center">تم استعادة كلمة السر بنجاح</h3>
+                <img src="images/done.svg" class="mx-auto d-block mt-5" alt="done">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0 pb-5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal New User -->
+    <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.828" height="13.828" viewBox="0 0 13.828 13.828">
+                <g id="Group_1165" data-name="Group 1165" transform="translate(-834.086 -278.086)">
+                  <line id="Line_83" data-name="Line 83" x2="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                  <line id="Line_84" data-name="Line 84" x1="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                </g>
+              </svg>                           
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-12">
+                <h3 class="text-secondary font-s-lg font-weight-bold text-center">انشاء حساب جديد</h3>
+                <div class="input-group mb-3 mt-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="id-1"><i class="fa fa-id-card-o text-secondary"></i></span>
+                  </div>
+                  <input type="number" class="form-control" placeholder="رقم الهوية" aria-label="id-1" aria-describedby="id-1">
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <select class="form-control">
+                      <option value="اليوم"> اليوم </option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select class="form-control">
+                      <option value="اليوم"> اليوم </option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select class="form-control">
+                      <option value="اليوم"> اليوم </option>
+                    </select>
+                  </div>
+                </div> 
+                
+                <div class="form-check mt-4 mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="TermsConditions">
+                  <label class="form-check-label" for="TermsConditions">
+                    <span>اقر بالالتزام بقوانين الموقع والمزايدات والالتزام </span> <a href="#">بالشروط والاحكام</a>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0 pb-5">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#DoneSignUp">انشاء الحساب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal SignUp done -->
+    <div class="modal fade" id="DoneSignUp" tabindex="-1" aria-labelledby="DoneSignUpLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.828" height="13.828" viewBox="0 0 13.828 13.828">
+                <g id="Group_1165" data-name="Group 1165" transform="translate(-834.086 -278.086)">
+                  <line id="Line_83" data-name="Line 83" x2="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                  <line id="Line_84" data-name="Line 84" x1="11" y2="11" transform="translate(835.5 279.5)" fill="none" stroke="#bcbcbc" stroke-linecap="round" stroke-width="2"/>
+                </g>
+              </svg>                           
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-12">
+                <h3 class="text-secondary font-s-lg font-weight-bold text-center">مرحبا محمد ، تم انشاء حسابك بنجاح</h3>
+                <img src="images/done.svg" class="mx-auto d-block mt-5" alt="done">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0 pb-5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
